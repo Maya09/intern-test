@@ -1,17 +1,35 @@
-import { connect } from 'react-redux';
-
 import * as actions from '../actions/search-actions';
-
+import data from '../data/words';
 import SearchForm from '../components/search-form';
 
-const mapStateToProps = state => ({
-  
-});
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-const mapDispatchToProps = dispatch => ({
+class SearchContainer extends Component {
+  render() {
+    // let  inputvalue  = this.props;
+    return <div>
+        <SearchForm data={data}/>
+    </div>
+  }
+}
 
-});
+// function mapStateToProps (state) {
+//   return {
+//     inputvalue: state.inputvalue
+//   }
+// }
 
-const SearchContainer = connect(mapStateToProps, mapDispatchToProps)(SearchForm);
+// export default connect(mapStateToProps)(SearchContainer)
+
+// const mapStateToProps = state => ({
+    
+// });
+
+// const mapDispatchToProps = dispatch => ({
+
+// });
+
+// const SearchContainer = connect(mapStateToProps, mapDispatchToProps)(SearchForm);
 
 export default SearchContainer;

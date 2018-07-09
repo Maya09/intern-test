@@ -8,9 +8,10 @@ import SearchContainer from './containers/search-container';
 
 import './styles/index.css'
 
-render(
-  <Provider store={store}>
-    <SearchContainer />
-  </Provider>,
-  document.getElementById('search-page')
-);
+// render(
+//   <Provider store={store}>
+//     <SearchContainer />
+//   </Provider>,
+//   document.getElementById('search-page')
+// );
+render(<SearchContainer />,document.getElementById('search-page'));

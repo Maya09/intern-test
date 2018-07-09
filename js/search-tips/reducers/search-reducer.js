@@ -1,7 +1,11 @@
-const search = (state = {}, action) => {
+const initialState = {
+  inputValue: ''
+};
+
+const search = (state = initialState, action) => {
   switch (action.type) {
     case 'search':
-      return {};
+      return {state};
     default:
       return state;
   }
